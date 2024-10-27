@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<title>Back to Learning!</title>
+<style>
+html { color-scheme: light dark; }
+body {
+    margin: 0;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    background-color: black;
+    background-image: url("/assets/photos/bg_stars.gif");
+    background-repeat: repeat;
+}
+
+.container12 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the sections */
+    padding: 20px;
+}
+
+.gif-section {
+    width: 400px; /* Set a fixed width for GIF sections */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center the GIFs */
+    align-items: center; /* Center content in the side sections */
+}
+
+.gif-section img {
+    max-width: 100%; /* Ensure GIFs are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content {
+    max-width: 800px; /* Limit the width of the main content */
+    text-align: center; /* Center align text */
+}
+
+.wavy-text {
+    font-size: 40px; /* Adjusted font size */
+}
+</style>
+</head>
+<body>
+<div class="custom-cursor" id="customCursor"></div>
+<script src="/assets/js/wavy.js"></script>
+<script src="/assets/js/cursor.js"></script>
+
+<div class="container12">
+    <!-- Left GIF Area -->
+    <div class="gif-section">
+        <img src="assets/photos/doc.gif" alt="Left GIF 1">
+        <img src="assets/photos/nike.gif" alt="Left GIF 2">
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <div class="padding-top-xl"></div>
+        <div class="wavy-text">
+            <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span><span>!</span>
+        </div>
+        <div class="padding-top-xl"></div>
+        <p style="font-family: 'Comic Sans MS', sans-serif; font-size: 25px">
+            Back to Learning is a Back to the Future themed educational website. Our goal is to exhibit major events that have happened throughout the past 100 years in whatever subject you select!
+        </p>
+        <div class="padding-top-lg"></div>
+        
+        <!-- Large main image -->
+        <img src="assets/photos/carnew.png" class="large-image" alt="Large Image">
+
+        <!-- Row of smaller images with links underneath each -->
+        <div class="image-row">
+            <div class="image-item">
+                <img src="/assets/photos/history.png" alt="History">
+                <a href="history/history.html">History</a>
+            </div>
+            <div class="image-item">
+                <img src="/assets/photos/tech.png" alt="Tech">
+                <a href="tech/tech.html">Tech</a>
+            </div>
+            <div class="image-item">
+                <img src="/assets/photos/film.png" alt="Film">
+                <a href="film/film.html">Film</a>
+            </div>
+            <div class="image-item">
+                <img src="/assets/photos/sports.png" alt="Sports">
+                <a href="sports/sports.html">Sports</a>
+            </div>
+            <div class="image-item">
+                <img src="/assets/photos/science.png" alt="Science">
+                <a href="science/science.html">Science</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right GIF Area -->
+    <div class="gif-section">
+        <img src="assets/photos/spin.gif" alt="Right GIF 1">
+        <img src="assets/photos/7LfE.gif" alt="Right GIF 2">
+    </div>
+</div>
+</body>
+</html>
