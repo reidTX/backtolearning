@@ -17,6 +17,22 @@ body {
 	background-position: center; 
     background-repeat: no-repeat;
 }
+	.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkblue; 
+	}
+	p, ul{
+		color:black;
+	}
 </style>
 </head>
 <body>
@@ -25,19 +41,51 @@ body {
 <script src="/assets/js/cursor.js"></script>
 <div class="pagination pagination-centered">
 	<ul>
-	<li><a href="../assets/css/history/history.html">Intro</a></li>
-	<li><a href="../assets/css/history/h1920s.html">1920s</a></li>
-	<li><a href="../assets/css/history/h1930s.html">1930s</a></li>
-	<li><a href="../assets/css/history/h1940s.html">1940s</a></li>
-	<li><a href="../assets/css/history/h1950s.html">1950s</a></li>
-	<li><a href="../assets/css/history/h1960s.html">1960s</a></li>
-	<li><a href="../assets/css/history/h1970s.html">1970s</a></li>
-	<li><a href="../assets/css/history/h1980s.html">1980s</a></li>
-	<li><a href="../assets/css/history/h1990s.html">1990s</a></li>
+	<li><a href="history.html">Intro</a></li>
+	<li><a href="h1920s.html">1920s</a></li>
+	<li><a href="h1930s.html">1930s</a></li>
+	<li><a href="h1940s.html">1940s</a></li>
+	<li><a href="h1950s.html">1950s</a></li>
+	<li><a href="h1960s.html">1960s</a></li>
+	<li><a href="h1970s.html">1970s</a></li>
+	<li><a href="h1980s.html">1980s</a></li>
+	<li><a href="h1990s.html">1990s</a></li>
 	<li class="active"><a href="h2000s.html">2000s</a></li>
-	<li><a href="../assets/css/history/h2010s.html">2010s</a></li>
-	<li><a href="../assets/css/history/h2020s.html">2020s</a></li>
+	<li><a href="h2010s.html">2010s</a></li>
+	<li><a href="h2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>Invasion of Iraq</h2>
+        <p>In 2003 the Invasion of Iraq occurred and was the first stage of the Iraq war. The invasion began on March 20th of 2003 and lasted over a month.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Great Recession</h2>
+        <p>The 2007-09 economic crisis was deep and protracted enough to become known as "the Great Recession"</p>
+		<p>The period known as the Great Moderation came to an end when the decade-long expansion in US housing market activity peaked in 2006 and residential construction began declining. In 2007, losses on mortgage-related financial assets began to cause strains in global financial markets, and in December 2007 the US economy entered a recession. That year several large financial firms experienced financial distress, and many financial markets experienced significant turbulence. In response, the Federal Reserve provided liquidity and support through a range of programs motivated by a desire to improve the functioning of financial markets and institutions, and thereby limit the harm to the US economy.</p>
+    </div>
+    <div class="grid-item">
+        <h2>9/11</h2>
+        <p>9/11 was an impactful event that occurred in the United States on September 11, 2001, in which the twin towers located in New York city were hit by two planes. These planes were hijacked by terrorists.</p>
+    </div>
+    <div class="grid-item">
+        <h2>First African American President</h2>
+        <p>Barack Obama was the first African American president in the United States. He was inaugurated in 2009 and was president until 2017. He was the 44th president of the United States, and won the election against John McCain when he became president. Some milestones in his term were  Obama's accomplishments during the first 100 days of his presidency included signing the Lilly Ledbetter Fair Pay Act of 2009 relaxing the statute of limitations for equal-pay lawsuits; signing into law the expanded Children's Health Insurance Program, and established obama care.</p>
+    </div>
+	<div class="grid-item">
+        <img src="../assets/photos/bama.jfif" style="width: 60%; height: 80%; display: block; margin: 0 auto;">
+    </div>
+   <div class="grid-item">
+        <h2>Hurricane Katrina</h2>
+        <p>Hurricane Katirna took place in August of 2005 and it became a large and extremely powerful hurricane that caused enormous destruction and significant loss of life. It is the costliest hurricane to ever hit the United States, surpassing the record previously held by Hurricane Andrew from 1992.The hurricane caused damage and loss of life this in Louisiana and Mississippi was staggering with significant effects extending into Alabama and the western Florida panhandle. This was a storm that captivated the public and media with most coverage occurring in the New Orleans area. Considering the scope of its impacts, Katrina was one of the most devastating natural disasters in United States history.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

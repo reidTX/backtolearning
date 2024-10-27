@@ -9,13 +9,52 @@
 html { color-scheme: light dark; }
 body {
     margin: 0;
+    height: 100vh;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/filmback.jpg");
-    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+
+h2 {
+    color: yellow; 
+	font-size: 36px;
+}
+
+p, ul {
+    color: white;
+	font-size: 24px;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -39,5 +78,31 @@ body {
 	<li><a href="f2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Computer graphics</h2>
+        <p>The 1980s, marked by the influence of visual effects pioneers like Industrial Light [&] Magic, founded by George Lucas in 1975, witnessed a surge in CGI's use in movies. This period saw films like Tron (1982), The Last Starfighter (1984), Young Sherlock Holmes (1985), and The Abyss (1989) integrating CGI technology</p>
+    </div>
+    <div class="grid-item">
+        <h2>The Advancements</h2>
+        <p>The decade of the 1980s in Western cinema saw the return of studio-driven pictures, coming from the filmmaker-driven New Hollywood era of the 1970s. The period was when the "high concept" picture was created by producer Don Simpson, where films were expected to be easily marketable and understandable.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Notable films</h2>
+        <p><ul>
+		<li style="padding: 3px">Raging Bull 1980</li>
+		<li style="padding: 3px">E.T. The Extra terrestrial 1982</li>
+		<li style="padding: 3px">Raiders of the Lost Ark  1981</li>
+		<li style="padding: 3px">Amadeus 1984</li>
+		<li style="padding: 3px">Platoon 1986</li>
+		</ul></p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

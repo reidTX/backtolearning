@@ -17,6 +17,31 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: yellow; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -39,5 +64,41 @@ body {
 	<li class="active"><a href="f2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>AI and the way it impacts film</h2>
+        <p> AI is revolutionizing film production by automating various tasks such as script analysis, video editing, CGI generation, and even virtual actors. It is streamlining workflows, reducing costs, and enabling filmmakers to create unique and engaging content.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/moveiai.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>The Pandemic and Films</h2>
+        <p>In the US film industry, more than 155 films were delayed to 2020 and produced in 2021 or 2022. The pandemic directly affected more than 80 productions, causing them to be suspended, delayed, or canceled, with a significant economic impact on the industry and employment.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Rapid acceleration in Streaming services</h2>
+        <p>The pandemic led to widespread theater closures, delays in releases, and a rapid acceleration in the shift towards streaming services as a primary means of distribution.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/barbie.jpg" style="width: 80%; height: 70%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Notable films</h2>
+        <p><ul>
+		<li>Avatar</li>
+		<li>Barbie</li>
+		<li>The Little Mermaid</li>
+		<li>Top Gun Maverick</li>
+		<li>DUNE</li>
+		</ul></p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

@@ -17,6 +17,31 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: yellow; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -39,5 +64,41 @@ body {
 	<li><a href="f2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>Creative high point</h2>
+        <p>The 1970s opened with Hollywood experiencing a financial and artistic depression, the decade became a creative high point in the US film industry. Restrictions on language, adult content and sexuality, and violence had loosened up, and these elements became more widespread. The hippie movement, the civil rights movement, free love, the growth of rock and roll, changing gender roles and drug use certainly had an impact. And Hollywood was renewed and reborn with the earlier collapse of the studio system, and the works of many new and experimental film-makers (wrongly nicknamed "Movie Brats") during a Hollywood New Wave.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/cgi.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Computer generated imagery</h2>
+        <p> Advances in algorithms and electronics in flight simulator visual systems and CGI in the 1970s and 1980s influenced many technologies still used in modern CGI adding the ability to superimpose texture over the surfaces as well as transition imagery from one level of detail to the next one in a smooth manner.</p>
+    </div>
+    <div class="grid-item">
+        <h2>New filmmaking techniques</h2>
+        <p>Technological advancements also played a significant role in shaping Hollywood in the '70s. The introduction of new filmmaking techniques, such as the use of handheld cameras, naturalistic lighting, and on-location shooting, added a sense of realism and authenticity to films.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/god.jfif" style="width: 8S0%; height: 60%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Notable films</h2>
+        <p><ul>
+		<li>The Godfather 1972</li>
+		<li>Taxi Driver 1976</li>
+		<li>Mean Streets 1973</li>
+		<li>Alice doesn't live here anymore 1974</li>
+		<li>Five easy pieces 1970</li>
+		</ul></p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

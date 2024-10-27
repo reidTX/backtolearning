@@ -14,6 +14,31 @@ body {
     background-image: url("../assets/photos/sciecneback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkgreen; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -36,5 +61,36 @@ body {
 	<li><a href="sc2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Establishment on study of animal behavior</h2>
+        <p>By this they meant “How do the specific behaviors of these animals lead to differential reproduction?” Since its birth in the 1930s, the ethological approach—which stresses the direct observation of a broad array of animal species in nature, embraces the vast variety of behaviors found in the animal kingdom, and …</p>
+    </div>
+    <div class="grid-item">
+        <h2>New science tools</h2>
+        <p>New tools such as special microscopes and the cyclotron take research to higher levels, while average citizens enjoy novel amenities such as the FM radio. The first permanent alloy magnets of aluminum, nickel and cobalt (alnico magnets) are produced.</p>
+	</div>
+    <div class="grid-item">
+        <h2>Discovery of neutron</h2>
+        <p>The British physicist Sir James Chadwick discovered neutrons in the year 1932. He was awarded the Nobel Prize in Physics in the year 1935 for this discovery. It is important to note that the neutron was first theorized by Ernest Rutherford in the year 1920.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Discovery of Citric acid cycle</h2>
+        <p>After Albert Szent-Györgyi identified several important reactions in these metabolic processes, in 1937 Hans Krebs was able to present a complete picture of an important part of metabolism—the citric acid cycle.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/neutron.png" style="width: 50%; height: 70%; display: block; margin: 0 auto;">
+	</div>
+ <div class="grid-item">
+        <h2>Quantum Mechanics Advancements</h2>
+        <p>In 1932 von Neumann put quantum theory on a firm theoretical basis. Some of the earlier work had lacked mathematical rigour, but von Neumann put the whole theory into the setting of operator algebra.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

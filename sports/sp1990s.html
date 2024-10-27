@@ -7,12 +7,45 @@
 <title>Back to Learning!</title>
 <style>
 html { color-scheme: light dark; }
-body {
+body{
     margin: 0;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/sportsback.jpg");
     background-repeat: repeat;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-position: center;
+	background-attachment: fixed;
+}
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+	h2 {
+		color: darkgreen; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -36,5 +69,25 @@ body {
 	<li><a href="sp2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>NFL</h2>
+        <p>The NFL continued to rise, however, the OJ Simpson trail also took place in the 90s. The Simpson trial involved a previous NFL player who was accused of murdering his wife. The trail was made popular as individuals felt they were putting up a divide between two races. The OJ Simpson trial would go down in history as one of the most memorable NFL controversies.</p>
+    </div>
+    <div class="grid-item">
+        <h2>NBA</h2>
+        <p>The 90s were some of the greatest years in the NBA as it was some of the greatest players playing against one another and the sport was only becoming more and more popular.</p>
+    </div>
+<div class="grid-item">
+        <h2>WNBA</h2>
+        <p>Although it started to form in the 70s; the WNBA was established on April 24, 1996. The WNBA is the The Women's National Basketball Association. They made history with women and sports by establishing an Association for women in a male dominated sport. Thats not to say they get equal pay, but most of that is due to popularity.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

@@ -9,11 +9,48 @@
 html { color-scheme: light dark; }
 body {
     margin: 0;
-	height: 100vh;
+    height: 100vh;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+
+h2 {
+    color: orange; 
+	font-size: 36px;
+}
+
+p, ul {
+    color: white;
+	font-size: 24px;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -37,5 +74,25 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Personal computers</h2>
+        <p>From the introduction of the IBM Personal Computer in 1981, the market for computers meant for the corporate, business, and government sectors came to be dominated by the new machine and its MS-DOS operating system. Computers gave individuals access to a new way of storing and tracking information.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Nintendo</h2>
+        <p>The Nintendo Entertainment System (NES) is an 8-bit home video game console produced by Nintendo. It was first released in Japan on July 15, 1983, as the Family Computer (Famicom). </p>
+    </div>
+    <div class="grid-item">
+        <h2>Cable television</h2>
+        <p>In the 1980s, cable television began to experience unprecedented growth. Whereas broadcast TV allowed a viewer to receive the signals of nearby stations over the air with the help of an antenna, cable technology brought a wider array of channels directly into the home by way of a coaxial cable.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

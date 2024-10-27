@@ -15,48 +15,27 @@ body {
     background-repeat: repeat;
 }
 
-.container12 {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space out the sections */
-    padding: 20px;
+/* Style for the large car image */
+.large-image {
+    width: 200px; /* Starting size */
+    transition: transform 3s ease-in-out, opacity 3s ease-in-out; /* Match this duration with JS */
 }
 
-.gif-section {
-    width: 400px; /* Set a fixed width for GIF sections */
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center the GIFs */
-    align-items: center; /* Center content in the side sections */
-}
-
-.gif-section img {
-    max-width: 100%; /* Ensure GIFs are responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.content {
-    max-width: 800px; /* Limit the width of the main content */
-    text-align: center; /* Center align text */
-}
-
-.wavy-text {
-    font-size: 40px; /* Adjusted font size */
+/* Animation class to shrink and move the image */
+.shrink-and-move {
+    transform: scale(0.2) translateY(-200px); /* Shrink and move up */
+    opacity: 0; /* Gradually fade out */
 }
 </style>
 </head>
 <body>
 <div class="custom-cursor" id="customCursor"></div>
-<script src="/assets/js/wavy.js"></script>
-<script src="/assets/js/cursor.js"></script>
 
 <div class="container12">
-    <!-- Left GIF Area -->
     <div class="gif-section">
-        <img src="assets/photos/doc.gif" alt="Left GIF 1">
-        <img src="assets/photos/nike.gif" alt="Left GIF 2">
+        <img src="assets/photos/doc.gif">
+        <img src="assets/photos/nike.gif">
     </div>
-
-    <!-- Main Content Area -->
     <div class="content">
         <div class="padding-top-xl"></div>
         <div class="wavy-text">
@@ -67,40 +46,54 @@ body {
             Back to Learning is a Back to the Future themed educational website. Our goal is to exhibit major events that have happened throughout the past 100 years in whatever subject you select!
         </p>
         <div class="padding-top-lg"></div>
-        
-        <!-- Large main image -->
-        <img src="assets/photos/carnew.png" class="large-image" alt="Large Image">
 
-        <!-- Row of smaller images with links underneath each -->
+        <!-- Car Image with Click Event to Start Animation -->
+        <img src="assets/photos/carnew.png" class="large-image" alt="Car Image" id="carImage">
+
         <div class="image-row">
             <div class="image-item">
                 <img src="/assets/photos/history.png" alt="History">
-                <a href="history/history.html">History</a>
+                <a href="history/history.html" onclick="animateCar(event, 'history/history.html')">History</a>
             </div>
             <div class="image-item">
                 <img src="/assets/photos/tech.png" alt="Tech">
-                <a href="tech/tech.html">Tech</a>
+                <a href="tech/tech.html" onclick="animateCar(event, 'tech/tech.html')">Tech</a>
             </div>
             <div class="image-item">
                 <img src="/assets/photos/film.png" alt="Film">
-                <a href="film/film.html">Film</a>
+                <a href="film/film.html" onclick="animateCar(event, 'film/film.html')">Film</a>
             </div>
             <div class="image-item">
                 <img src="/assets/photos/sports.png" alt="Sports">
-                <a href="sports/sports.html">Sports</a>
+                <a href="sports/sports.html" onclick="animateCar(event, 'sports/sports.html')">Sports</a>
             </div>
             <div class="image-item">
                 <img src="/assets/photos/science.png" alt="Science">
-                <a href="science/science.html">Science</a>
+                <a href="science/science.html" onclick="animateCar(event, 'science/science.html')">Science</a>
             </div>
         </div>
     </div>
 
-    <!-- Right GIF Area -->
     <div class="gif-section">
         <img src="assets/photos/spin.gif" alt="Right GIF 1">
         <img src="assets/photos/7LfE.gif" alt="Right GIF 2">
     </div>
 </div>
+
+<script>
+    function animateCar(event, targetUrl) {
+        event.preventDefault(); // Prevent the default link behavior
+        
+        const carImage = document.getElementById('carImage');
+        
+        // Apply the animation class
+        carImage.classList.add('shrink-and-move');
+        
+        // Wait for the animation to finish before navigating to the new page
+        setTimeout(() => {
+            window.location.href = targetUrl;
+        }, 3000); // Match this time with the CSS animation duration
+    }
+</script>
 </body>
 </html>

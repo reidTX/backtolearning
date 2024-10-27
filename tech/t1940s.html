@@ -9,11 +9,48 @@
 html { color-scheme: light dark; }
 body {
     margin: 0;
-	height: 100vh;
+    height: 100vh;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+
+h2 {
+    color: orange; 
+	font-size: 36px;
+}
+
+p, ul {
+    color: white;
+	font-size: 24px;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -37,5 +74,26 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Microwaves</h2>
+        <p>The microwave was invented in 1945 by Raytheon engineer Percy Spencer, as evidenced by his patent for a “Method of treating foodstuffs.” But Spencer was not seeking food-related inventions.</p>
+		<p>The microwave now provides quick and easy way to heat up and cook frozen foods to then consume safely.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Television</h2>
+        <p>The 1940s were the true beginning of the TV era. Although sets had been available as early as the late 1930s, the widespread distribution and sale of TV sets did not really take off until after the war. Broadcasting stations neglected many of their radio stations and poured money into TV after the war. Soon many radio dramas, variety shows, and comedy programs were available on TV and radio was left with mostly music.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Atomic bomb</h2>
+        <p>In 1938, Physicist J. Robert Oppenheimer and Army Lt. Gen. Leslie Groves were two of the three chemists working in a laboratory in Berlin and they made a discovery that would alter the course of history: they split the uranium atom. The energy released when this splitting, or fission, occurs is tremendous--enough to power a bomb.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

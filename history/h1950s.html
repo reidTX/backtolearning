@@ -17,6 +17,22 @@ body {
 	background-position: center; 
     background-repeat: no-repeat;
 }
+		.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkblue; 
+	}
+	p, ul{
+		color:black;
+	}
 </style>
 </head>
 <body>
@@ -25,19 +41,49 @@ body {
 <script src="/assets/js/cursor.js"></script>
 <div class="pagination pagination-centered">
 	<ul>
-	<li><a href="../assets/css/history/history.html">Intro</a></li>
-	<li><a href="../assets/css/history/h1920s.html">1920s</a></li>
-	<li><a href="../assets/css/history/h1930s.html">1930s</a></li>
-	<li><a href="../assets/css/history/h1940s.html">1940s</a></li>
+	<li><a href="history.html">Intro</a></li>
+	<li><a href="h1920s.html">1920s</a></li>
+	<li><a href="h1930s.html">1930s</a></li>
+	<li><a href="h1940s.html">1940s</a></li>
 	<li class="active"><a href="h1950s.html">1950s</a></li>
-	<li><a href="../assets/css/history/h1960s.html">1960s</a></li>
-	<li><a href="../assets/css/history/h1970s.html">1970s</a></li>
-	<li><a href="../assets/css/history/h1980s.html">1980s</a></li>
-	<li><a href="../assets/css/history/h1990s.html">1990s</a></li>
-	<li><a href="../assets/css/history/h2000s.html">2000s</a></li>
-	<li><a href="../assets/css/history/h2010s.html">2010s</a></li>
-	<li><a href="../assets/css/history/h2020s.html">2020s</a></li>
+	<li><a href="h1960s.html">1960s</a></li>
+	<li><a href="h1970s.html">1970s</a></li>
+	<li><a href="h1980s.html">1980s</a></li>
+	<li><a href="h1990s.html">1990s</a></li>
+	<li><a href="h2000s.html">2000s</a></li>
+	<li><a href="h2010s.html">2010s</a></li>
+	<li><a href="h2020s.html">2020s</a></li>
 	</ul>
 	</div>
+		<div class="grid-container">
+    <div class="grid-item">
+        <h2>The post WW2 boom</h2>
+        <p>The post WWII boom refers to a period of significant economic expansion hat occurred in the United States and many other Western countries following World War II. The baby boom, or boomers, refers to the adult individuals that tried to conceive a child prior to their partner heading off to war, which cause a rise in birth rates.</p>
+    </div>
+	<div class="grid-item">
+        <img src="../assets/photos/koreanwar.jfif" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+    <div class="grid-item">
+        <h2>Start of the Korean war</h2>
+        <p>The korean war began in 1950 on June 25th and ended on July 27th of 1953. It began as when the Northern Korean People's Army invaded South Korea in a coordinated general attack at several strategic points along the 38th parallel.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Elizbeth the 2nd became queen</h2>
+        <p>In February of 1952 Elizbeth the second became the queen of Egland after her father King Geroge VIs and in an instant, she ceased to be Princess Elizabeth and became Queen Elizabeth II. The day before she was to make her formal oath at Westminster Abbey, The Queen made a radio broadcast to the Commonwealth in which she pledged her devotion to its people, saying, “Throughout all my life and with all my heart I shall strive to be worthy of your trust.”</p>
+    </div>
+	<div class="grid-item">
+        <img src="../assets/photos/civilrights.jfif" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+    <div class="grid-item">
+        <h2>Civil rights movement began</h2>
+        <p>The civil rights movement began in 1954 and was a struggle for social justice that took place mainly during the 1950s and 1960s for Black Americans to gain equal rights under the law in the United States. The civil rights movement concluded in 1968 due to the civil rights act of 1964 and the voting rights act of 1965. The impact of individuals like Martin Luther King and Rosa Parks pushed the movement forward.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

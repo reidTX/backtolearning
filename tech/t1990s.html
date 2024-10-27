@@ -15,6 +15,31 @@ body {
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: orange; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -37,5 +62,35 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>WWW</h2>
+        <p>Tim Berners-Lee introduced the World Wide Web, which transformed the internet from a way to send files to a "web" of linked information. The internet also allowed for Gen Z to be the first generation with complete access from the day they were born.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/www.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Text messaging</h2>
+        <p>On December 3, 1992, the first SMS text message in history is sent: Neil Papworth, a 22-year-old engineer, uses a personal computer to send the text message “Merry Christmas” via the Vodafone network to the phone of a colleague. Using SMS gateways, messages can be transmitted over the Internet through an SMSC, allowing communication to computers, fixed landlines, and satellite. </p>
+    </div>
+    <div class="grid-item">
+        <h2>The Sony Playstation</h2>
+        <p>The first PlayStation console was released in Japan in December 1994, and worldwide the following year. The original console in the series was the first console of any type to ship over 100 million units, doing so in under a decade. There famous line is “Play has no Limits”.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/play.jpg" style="width: 8S0%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Early development of mobile computing</h2>
+        <p>In the 1990s, mobile computing began with bulky and limited-functionality devices such as personal digital assistants (PDAs) and early mobile phones. These devices offered basic computing capabilities, such as note-taking, calendars, and simple communication.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

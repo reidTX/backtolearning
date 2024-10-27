@@ -12,7 +12,40 @@ body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/sciecneback.png");
-    background-repeat: repeat;
+	 display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+	h2 {
+		color: darkgreen; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -36,5 +69,27 @@ body {
 	<li><a href="sc2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Human Genome project</h2>
+        <p>The Human Genome Project identified the full set of human genes, sequenced them all, and identified some of the alleles, particularly those that can cause disease when they get mutated. Genes can be mapped relative to physical features of the chromosome, or relative to other genes.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Gene therapy</h2>
+        <p>In 1990, the first gene therapy trial on a human was performed on a four-year-old girl named Ashanthi DeSilva at the National Institutes of Health (NIH)
+In 1999, 18-year-old Jesse Gelsinger died after receiving gene therapy for a rare metabolic disorder. The viral vector used in his treatment caused a fatal immune response.
+</p>
+    </div>
+<div class="grid-item">
+        <h2>Dolly the sheep</h2>
+        <p>Dolly was cloned from a cell taken from the mammary gland of a six-year-old Finn Dorset sheep and an egg cell taken from a Scottish Blackface sheep. She was born to her Scottish Blackface surrogate mother on 5 July 1996.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

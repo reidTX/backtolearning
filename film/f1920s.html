@@ -17,6 +17,31 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: yellow; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -39,30 +64,41 @@ body {
 	<li><a href="f2020s.html">2020s</a></li>
 	</ul>
 	</div>
-	<div class="container-fluid container-content">
-    <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-            <p>Text or image content for Column 2</p>
-        </div>
-        <div class="col-md-4">
-            <p>Text or image content for Column 3</p>
-        </div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>Silent film</h2>
+        <p>A silent film is a film without synchronized recorded sound. Though silent films convey narrative and emotion visually, various plot elements or key lines of dialogue may, when necessary, be conveyed by the use of inter-title cards.</p>
     </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <p>Text or image content for Column 4</p>
-        </div>
-        <div class="col-md-4">
-            <p>Text or image content for Column 5</p>
-        </div>
-        <div class="col-md-4">
-            <p>Text or image content for Column 6</p>
-        </div>
+	<div class="grid-item">
+	<img src="../assets/photos/walt.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Film Studios</h2>
+        <p>It was during the 1920's that studios became factories for large-scale productions of mass commercial entertainment. There were three film giants at the beginning of the 1920's and they were Zukor's Famous Players-Lasky Corporation, Loew's, Inc., and First National. United Artists was formed in 1919 by four prominent film artists, D.W. Griffith, Charlie Chaplin, Mary Pickford, and Douglas Fairbanks. In 1924, Metro-Goldwyn-Mayer (MGM) emerged as a result of the merger of Metro Pictures, Goldwyn Pictures, and Louis B. Mayer Productions (Loew's Inc.)</p>
+    </div>
+    <div class="grid-item">
+        <h2>Walt Disney</h2>
+        <p>Like many others in the 1920s, Disney moved to California with dreams of success. Along with his brother, Roy, he started a small animation studio and cajoled his friend Iwerks to join them. On November 28, 1928, they premiered "Steamboat Willie," the cartoon that introduced the universally appealing Mickey Mouse to movie audiences and was also the first to fully incorporate synchronized sound.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/nos.jpg" style="width: 8S0%; height: 60%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Notable films</h2>
+        <p><ul>
+		<li>Sherlock Jr 1924</li>
+		<li>Nosferatu: A symphony of Horror 1922</li>
+		<li>Battleship Potemkin 1925</li>
+		<li>Greed 1924</li>
+		<li>The Gold Rush 1925</li>
+		</ul></p>
     </div>
 </div>
-
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

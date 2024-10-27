@@ -17,6 +17,22 @@ body {
 	background-position: center; 
     background-repeat: no-repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkblue; 
+	}
+	p, ul{
+		color:black;
+	}
 </style>
 </head>
 <body>
@@ -25,19 +41,49 @@ body {
 <script src="/assets/js/cursor.js"></script>
 <div class="pagination pagination-centered">
 	<ul>
-	<li><a href="../assets/css/history/history.html">Intro</a></li>
-	<li><a href="../assets/css/history/h1920s.html">1920s</a></li>
-	<li><a href="../assets/css/history/h1930s.html">1930s</a></li>
-	<li><a href="../assets/css/history/h1940s.html">1940s</a></li>
-	<li><a href="../assets/css/history/h1950s.html">1950s</a></li>
-	<li><a href="../assets/css/history/h1960s.html">1960s</a></li>
-	<li><a href="../assets/css/history/h1970s.html">1970s</a></li>
-	<li><a href="../assets/css/history/h1980s.html">1980s</a></li>
-	<li><a href="../assets/css/history/h1990s.html">1990s</a></li>
-	<li><a href="../assets/css/history/h2000s.html">2000s</a></li>
-	<li><a href="../assets/css/history/h2010s.html">2010s</a></li>
+	<li><a href="history.html">Intro</a></li>
+	<li><a href="h1920s.html">1920s</a></li>
+	<li><a href="h1930s.html">1930s</a></li>
+	<li><a href="h1940s.html">1940s</a></li>
+	<li><a href="h1950s.html">1950s</a></li>
+	<li><a href="h1960s.html">1960s</a></li>
+	<li><a href="h1970s.html">1970s</a></li>
+	<li><a href="h1980s.html">1980s</a></li>
+	<li><a href="h1990s.html">1990s</a></li>
+	<li><a href="h2000s.html">2000s</a></li>
+	<li><a href="h2010s.html">2010s</a></li>
 	<li class="active"><a href="h2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>COVID</h2>
+        <p>COVID was a global pandemic that was an infectious disease caused by the SARS virus. Individuals that were effected began to have respiratory infections and in some cases, especially with those who had previous health problems or who were ill, led to death.</p>
+    </div>
+	<div class="grid-item">
+        <img src="../assets/photos/covid.jfif" style="width: 60%; height: 80%; display: block; margin: 0 auto;">
+    </div>
+   <div class="grid-item">
+        <h2>CARES Act</h2>
+        <p>The Coronavirus Aid, Relief, and Economic Security (CARES) Act was a $2.2 trillion economic stimulus bill passed by Congress in March 2020 to address the economic impact of the COVID-19 pandemic. The CARES Act provided direct assistance to American families, workers, small businesses, and industries.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Current US election</h2>
+        <p>The current 2024 US election has caused individuals to be put in a frenzy as the choose between candidate Kamala Harris and Donald Trump. Some do not agree with trump's views as they are seemingly immoral, and could devolve the advancements made by the United States congress. Some do not agree with Kamala's views as she is hoping to overturn Roe V. Wade and provide funding for ethical advancements.</p>
+    </div>
+	<div class="grid-item">
+        <img src="../assets/photos/capitol.jfif" style="width: 60%; height: 80%; display: block; margin: 0 auto;">
+    </div>
+   <div class="grid-item">
+        <h2>Capitol Attack</h2>
+        <p>On January 6, 2021, the United States Capitol Building in Washington, D.C., was attacked by a mob of supporters of then–U.S. President Donald Trump in an attempted self-coup two months after his defeat in the 2020 presidential election. They sought to keep him in power and the attack was ultimately unsuccessful in preventing the certification of the election results.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

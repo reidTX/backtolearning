@@ -17,6 +17,22 @@ body {
 	background-position: center; 
     background-repeat: no-repeat;
 }
+	.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkblue; 
+	}
+	p, ul{
+		color:black;
+	}
 </style>
 </head>
 <body>
@@ -25,19 +41,50 @@ body {
 <script src="/assets/js/cursor.js"></script>
 <div class="pagination pagination-centered">
 	<ul>
-	<li><a href="../assets/css/history/history.html">Intro</a></li>
-	<li><a href="../assets/css/history/h1920s.html">1920s</a></li>
+	<li><a href="history.html">Intro</a></li>
+	<li><a href="h1920s.html">1920s</a></li>
 	<li class="active"><a href="h1930s.html">1930s</a></li>
-	<li><a href="../assets/css/history/h1940s.html">1940s</a></li>
-	<li><a href="../assets/css/history/h1950s.html">1950s</a></li>
-	<li><a href="../assets/css/history/h1960s.html">1960s</a></li>
-	<li><a href="../assets/css/history/h1970s.html">1970s</a></li>
-	<li><a href="../assets/css/history/h1980s.html">1980s</a></li>
-	<li><a href="../assets/css/history/h1990s.html">1990s</a></li>
-	<li><a href="../assets/css/history/h2000s.html">2000s</a></li>
-	<li><a href="../assets/css/history/h2010s.html">2010s</a></li>
-	<li><a href="../assets/css/history/h2020s.html">2020s</a></li>
+	<li><a href="h1940s.html">1940s</a></li>
+	<li><a href="h1950s.html">1950s</a></li>
+	<li><a href="h1960s.html">1960s</a></li>
+	<li><a href="h1970s.html">1970s</a></li>
+	<li><a href="h1980s.html">1980s</a></li>
+	<li><a href="h1990s.html">1990s</a></li>
+	<li><a href="h2000s.html">2000s</a></li>
+	<li><a href="h2010s.html">2010s</a></li>
+	<li><a href="h2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>In 1930 the dust bowl began</h2>
+        <p>Summed Up: The dust bowl was caused by changes in regional weather, federal land policies, and farm economics. It began in the 1930s and lasted for around a decade. The dust bowl claimed many lives due to agricultural industries, famine, and diseases the abundant amount of dust caused in the infected states. A few states that suffered were Texas, New Mexico, and Calardo. The tragedy lasted until 1936 and the refuges of the Dust bowl were known as “Okies”</p>
+    </div>
+    <div class="grid-item">
+        <h2>In 1932 President Rosevelt was elected</h2>
+        <p>The year 1932 was the year President Rosevelt was elected and he severed until his death in 1945; he would go down in history as the longest serving U.S. president. His presidency was popularized through his good neighbor policy.</p>
+    </div>
+    <div class="grid-item">
+        <h2>1939 was the start of WWII</h2>
+        <p>In 1939 the second world war began. It began on September 1st of 1939 when Germany invaded Poland. In response Great Britain and France declared war on Germany. The war caused many of the wealthies cities to be left is rubble and individuals who were children during the war struggled in their adult years due to the impact of the war.</p>
+    </div>
+    <div class="grid-item">
+        <h2>In 1931 food riots and banks collapsed</h2>
+        <p>Due to the great depression food riots began to break out, and in Minneapolis specifically several hundred men and women threw foods at different grocery markets. The depression also cause the U.S.  bank, known as the New Yorks Banks of the U.S. collapsed and was known as the longest bank failure in history.</p>
+    </div>
+	<div class="grid-item">
+        <img src="../assets/photos/ww2.jfif" alt="World War II" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+    <div class="grid-item">
+        <h2>The holocaust started</h2>
+        <p>In January of  1933 the holocaust began and lasted until May of 1945  when the Allied Powers defeated Nazi Germany in World War II. The holocost began because of an indvidual known as Adolf Hitler led a genocide of European Jews as the Nazis in 1933 began forming their ideaologies that were based on racisim and pursuit of “living space” and seized power.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

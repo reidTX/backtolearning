@@ -9,11 +9,48 @@
 html { color-scheme: light dark; }
 body {
     margin: 0;
-	height: 100vh;
+    height: 100vh;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+
+h2 {
+    color: orange; 
+	font-size: 36px;
+}
+
+p, ul {
+    color: white;
+	font-size: 24px;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -37,5 +74,25 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>IPhone</h2>
+        <p>The iPhone1  is the first iPhone model and the first smartphone developed and marketed by Apple Inc. After years of rumors and speculation, it was officially announced on January 9, 2007, and it was released in the United States on June 29, 2007.</p>
+    </div>
+    <div class="grid-item">
+        <h2>The Wii</h2>
+        <p>The Wii is a home video game console developed and marketed by Nintendo. It was released on November 19, 2006, in North America, and in December 2006 for most other regions of the world.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Bluetooth</h2>
+        <p>When did Bluetooth first become available? Bluetooth 1.0 specifications were released in 1999. The technology first appeared in mobile phones and desktop computers in 2000 and spread to printers and mobile computers (laptops) the following year.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

@@ -15,6 +15,31 @@ body {
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: orange; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -37,5 +62,35 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>Email</h2>
+        <p>Experimental message transfers between separate computer systems began on the ARPANET. Ray Tomlinson, of BBN, sent the first message across the network in 1971, initiating the use of the "@" sign to separate the names of the user and the user's machine.. Tomlinson's work was adopted across the ARPANET, which significantly increased network traffic. Tomlinson has been called "the inventor of modern email."</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/mac.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Apple Macintosh</h2>
+        <p>Jef Raskin conceived the Macintosh project in 1979, which was redefined by Apple co-founder Steve Jobs in 1981. The Macintosh was launched in January 1984, after Apple's "1984" advertisement during Super Bowl XVIII.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Pong</h2>
+        <p>Alcorn developed a prototype for a coin-operated arcade version so engaging that users testing it in a neighborhood bar filled its coin box to overflowing. It was the first commercially successful videogames.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/pong.jpg" style="width: 8S0%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>The floppy disk</h2>
+        <p>In 1971, IBM introduced the first "memory disk", as it was called then, or the "floppy disk" as it is known today. The first floppy was an 8" plastic disk coated with magnetic iron oxide; data was written to and read from the disk's surface.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

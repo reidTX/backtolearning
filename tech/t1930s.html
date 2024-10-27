@@ -15,6 +15,31 @@ body {
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: orange; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -37,5 +62,35 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+	<div class="grid-container">
+    <div class="grid-item">
+        <h2>Widespread radio ownership</h2>
+        <p>Radio ownership more than doubled in the 1930s, from about 40 percent of families at the decade's start to nearly 90 percent ten years later. By 1940 more families had radios than had cars, telephones, electricity, or plumbing.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/walk.jfif" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Nuclear Fusion discovered</h2>
+        <p>Nuclear fission was discovered at the Kaiser Wilhelm Institute for Chemistry in December 1938. While bombarding uranium with neutrons, Otto Hahn and his colleague Fritz Straßmann discovered that fission products such as barium were also created in the process.</p>
+    </div>
+    <div class="grid-item">
+        <h2>The walkie talkie</h2>
+        <p>The walkie-talkie was first invented in 1937 by the Canadian Don Hings, with many similar devices being developed by other inventors around the same time. The walkie-talkie has been used by many individuals the past almost 100 years, as even kids use them when playing games around the house.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/nuke.jpg" style="width: 8S0%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Jet engine</h2>
+        <p>The breakthrough came in 1930, when Royal Air Force Lt. Sir. Frank Whittle filed a patent for a jet-driven gas turbine. His engine, with a single-stage centrifugal compressor coupled to a single-stage turbine, was successfully tested on the test stand in April 1937 and formed the basis for the modern jet engine.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

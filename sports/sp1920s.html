@@ -14,6 +14,31 @@ body {
     background-image: url("../assets/photos/sportsback.jpg");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkgreen; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -36,5 +61,36 @@ body {
 	<li><a href="sp2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>First winter Olympics</h2>
+        <p>The first Olympic games took place in Chamonix, France from January 25 to February 5, 1924. The most memorable champion from this series of games was Finland’s Clas Thunberg, who took five medals, including three golds, in the five speed skating events.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/ruth.png" style="width: 50%; height: 70%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Babe Ruth</h2>
+        <p>Babe Ruth was a baseball player, and a very infamous one at that. He was known for hitting hundreds of home runs, and by 1920 he had hit 54 home runs. Babe Ruths legal name was actually George Herman Ruth.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Women in sports in the 1920s</h2>
+        <p>Although women were treated as ‘second class citizens’, their role in sports was only advancing through them gaining the right to vote and therefore giving the women a literal sense of freedom. In sports specifically, the roaring twenties saw the rise of Flappers, in which these women challenged social conventions and traditional ideas, similar to how women involved in sports continue to do today.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/bard.jpg" style="width: 50%; height: 70%; display: block; margin: 0 auto;">
+	</div>
+ <div class="grid-item">
+        <h2>Professional Football</h2>
+        <p>Professional Football officially began in the 1920 through the APFA, which was later renamed the NFL in 1922. The original organization consisted of ten teams, with the main four being the Canton Bulldogs, Arkon Pros, Cleveland Tigers, and Dayton Triangles. Four more teams would join later leading to the translation into the NFL. The Bulldogs won back-to-back NFL championship titles in 1922 and 1923. To this day, the Bulldogs still hold the NFL record for most consecutive team wins, with 25 straight.
+</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

@@ -9,13 +9,52 @@
 html { color-scheme: light dark; }
 body {
     margin: 0;
+    height: 100vh;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/filmback.jpg");
-    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 150px;
+}
+
+h2 {
+    color: yellow; 
+	font-size: 36px;
+}
+
+p, ul {
+    color: white;
+	font-size: 24px;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -39,5 +78,31 @@ body {
 	<li><a href="f2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>New Hollywood Era</h2>
+        <p>Yet, as the decade progressed, Hollywood radically shifted focus and began to produce an increasing number of anti-establishment films, laced with social commentary, directed at the growing youth market. By the early 1960s, an estimated 80 percent of the film-going population was between the ages of 16 and 25.</p>
+    </div>
+    <div class="grid-item">
+        <h2>First TV broadcast in color</h2>
+        <p>The first color broadcast in the 1960s was the President Urho Kekkonen's New Year's speech in 1969. Color television was introduced gradually, and by the end of the 1970s, most programs were in color. Some news broadcasts remained in black-and-white until May 1979.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Notable films</h2>
+        <p><ul>
+		<li style="padding: 3px">2001: A space Odyssey 1968</li>
+		<li style="padding: 3px">Psycho 1960</li>
+		<li style="padding: 3px">The good, the bad, and the ugly 1966</li>
+		<li style="padding: 3px">Lawrence of Arabia 1962</li>
+		<li style="padding: 3px">Once upon a time in the west 1968</li>
+		</ul></p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

@@ -17,6 +17,31 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: yellow; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -39,5 +64,41 @@ body {
 	<li><a href="f2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Sound fully established</h2>
+        <p>At first, the sound films which included synchronized dialogue, known as "talking pictures", or "talkies", were exclusively shorts. The earliest feature-length movies with recorded sound included only music and effects. The first feature film originally presented as a talkie was The Jazz Singer, which premiered on October 6th, 1927. Sound-on-film, however, would soon become the standard for talking pictures.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/sound.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Golden age of hollywood</h2>
+        <p>Classic Hollywood Cinema became characteristic of American cinema during the Golden Age of Hollywood, between roughly 1927 (with the advent of sound film) and 1969. It eventually became the most powerful and pervasive style of filmmaking worldwide.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Impact of the Great Depression</h2>
+        <p>Even at the Depression's depths 60 to 80 million Americans attended the movies each week, and, in the face of doubt and despair, films helped sustain national morale. Although the movie industry considered itself Depression- proof, Hollywood was no more immune from the Depression's effects than any other industry.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/kingkong.png" style="width: 8S0%; height: 60%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Notable Films</h2>
+        <p><ul>
+		<li>The Awful Truth 1937</li>
+		<li>King Kong 1933</li>
+		<li>The Women 1939</li>
+		<li>The Blue Angel 1930</li>
+		<li>Pygmalion 1938</li>
+		</ul></p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

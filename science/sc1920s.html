@@ -14,6 +14,31 @@ body {
     background-image: url("../assets/photos/sciecneback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkgreen; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -36,5 +61,38 @@ body {
 	<li><a href="sc2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>The Discovery of Insulin</h2>
+        <p>In January 1922, Leonard Thompson, a 14-year-old boy dying from diabetes in a Toronto hospital, became the first person to receive an injection of insulin. Within 24 hours, Leonard’s dangerously high blood glucose levels dropped to near-normal levels.</p>
+		<p>The news about insulin spread around the world like wildfire. In 1923, Banting and Macleod received the Nobel Prize in Medicine, which they shared with Best and Collip. Thank you, diabetes researchers!</p>
+		<p>Soon after, the medical firm Eli Lilly started large-scale production of insulin. It wasn’t long before there was enough insulin to supply the entire North American continent. In the decades to follow, manufacturers developed a variety of slower-acting insulins, the first introduced by Novo Nordisk Pharmaceuticals, Inc., in 1936.</p>
+    </div>
+    <div class="grid-item">
+        <h2>The Early Research of Penicillin</h2>
+        <p>In 1928 Dr Alexander Fleming returned from a holiday to find mould growing on a Petri dish of Staphylococcus bacteria. He noticed the mould seemed to be preventing the bacteria around it from growing. He soon identified that the mould produced a self-defence chemical that could kill bacteria.</p>
+	</div>
+    <div class="grid-item">
+        <h2>Einstein's theory of relativity</h2>
+        <p>The laws of physics are the same for all observers in any inertial frame of reference relative to one another (principle of relativity). The speed of light in vacuum is the same for all observers, regardless of their relative motion or of the motion of the light source.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Findings and understandings of vitamins</h2>
+        <p>Findings of vitamin D, E, and K were reported in the 1920s, while other vitamins were successfully isolated for the first time. Scientists were also beginning to recognize the role of vitamins in the prevention of conditions like scurvy, rickets, infertility, and more.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/stien.jfif" style="width: 50%; height: 70%; display: block; margin: 0 auto;">
+	</div>
+ <div class="grid-item">
+        <h2>Research into childhood diseases</h2>
+        <p>The 1920s saw important advances in addressing then-common childhood diseases like scarlet fever and measles. By the end of the decade, researchers had discovered antitoxins for both of these conditions.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

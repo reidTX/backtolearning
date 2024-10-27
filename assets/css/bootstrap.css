@@ -29,6 +29,15 @@ html, body {
     height: auto; /* Maintain aspect ratio */
 	margin-bottom: 60px;
 }
+.large-image {
+    transition: transform 3s ease-in-out, opacity 3s ease-in-out;
+}
+
+/* Animation class to shrink and move the image */
+.shrink-and-move {
+    transform: scale(0.2) translateY(-200px); /* Shrink and move up */
+    opacity: 0; /* Gradually fade out */
+}
 
 .content {
     max-width: 800px; /* Limit the width of the main content */
@@ -38,6 +47,7 @@ html, body {
     padding: 20px;
     color: white;
 }
+
 
 /* Style for the custom cursor */
 .custom-cursor {
@@ -112,6 +122,25 @@ html, body {
 }
 .clearfix {
   *zoom: 1;
+}
+.corner-content {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between image and text */
+}
+
+.corner-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: make the image slightly rounded */
+}
+
+.corner-text {
+    color: white;
+    font-size: 12px; /* Adjust for readability */
 }
 
 .clearfix:before,

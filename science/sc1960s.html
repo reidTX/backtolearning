@@ -14,6 +14,31 @@ body {
     background-image: url("../assets/photos/sciecneback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: darkgreen; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -36,5 +61,36 @@ body {
 	<li><a href="sc2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Space Exploration</h2>
+        <p> Aboard the Soviet Union's Sputnik 5, the first animals (two dogs, Belka and Strelka) and a range of plants are returned alive from space. 31 January 1961: Ham, a US chimpanzee, becomes the first hominid (or great ape) in space and the first to successfully survive the landing.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Laser Development</h2>
+        <p>Theodore Maiman made the first laser operate on 16 May 1960 at the Hughes Research Laboratory in California, by shining a high-power flash lamp on a ruby rod with silver-coated surfaces. He promptly submitted a short report of the work to the journal Physical Review Letters, but the editors turned it down.</p>
+	</div>
+    <div class="grid-item">
+        <h2>First Human spaceflight</h2>
+        <p>12 April 1961 was the date of the first human space flight, carried out by Yuri Gagarin, a Soviet citizen. This historic event opened the way for space exploration for the benefit of all humanity.</p>
+    </div>
+    <div class="grid-item">
+        <h2>First bone marrow transplant</h2>
+        <p>The first successful bone marrow transplant was performed in 1956 by Dr. E. Donnall Thomas in Cooperstown, New York. The transplant involved a child with leukemia receiving bone marrow from their identical twin</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/dna.jpg" style="width: 50%; height: 70%; display: block; margin: 0 auto;">
+	</div>
+ <div class="grid-item">
+        <h2>Discovery of DNA structure</h2>
+        <p>The three-dimensional structure of DNA was first proposed by James Watson and Francis Crick in 1953. It is one of the most famous scientific discoveries of all time. James and Francis used evidence shared by others, particularly Rosalind Franklin and Maurice Wilkins, to determine the shape of DNA.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

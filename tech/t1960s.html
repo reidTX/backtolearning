@@ -15,6 +15,31 @@ body {
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+	
+}
+	h2 {
+		color: orange; 
+	}
+	p, ul{
+		color:white;
+	}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -37,5 +62,35 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Computer mouse</h2>
+        <p>The first computer mouse prototype changed how humans interact with computers in 1968. Development of the mouse began in the early 1960s by SRI International's Douglas Engelbart, while he was exploring the interactions between humans and computers.</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/mouse.jpg" style="width: 80%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>The foundation of internet through ARPANET</h2>
+        <p>The ARPANET allowed different kinds of computers on different networks to "talk" to each other. ARPANET and the Defense Data Network officially changed to the TCP/IP standard on January 1, 1983, hence the birth of the Internet. This allowed all networks to be connected by a universal language.</p>
+    </div>
+    <div class="grid-item">
+        <h2>The video game console</h2>
+        <p>The first generation game consoles picked up in development during the late 1960s when television engineer Ralph Baer had the idea of interactive television, code name “The Brown Box.”</p>
+    </div>
+	<div class="grid-item">
+	<img src="../assets/photos/brown.jpg" style="width: 8S0%; height: 80%; display: block; margin: 0 auto;">
+	</div>
+    <div class="grid-item">
+        <h2>Communication satellites</h2>
+        <p>The communication satellites launched on July 10, 1962, Telstar 1, developed by the American Telephone and Telegraph Company (AT&T),and they were the world's first active communications satellite. AT&T used the satellite to test basic features of communications via space.</p>
+    </div>
+</div>
+<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>

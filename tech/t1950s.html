@@ -9,11 +9,48 @@
 html { color-scheme: light dark; }
 body {
     margin: 0;
-	height: 100vh;
+    height: 100vh;
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color: black;
     background-image: url("../assets/photos/techback.png");
     background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+	margin-top: 200px;
+}
+
+h2 {
+    color: orange; 
+	font-size: 36px;
+}
+
+p, ul {
+    color: white;
+	font-size: 24px;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+    padding: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	font-size: 16px;
 }
 </style>
 </head>
@@ -37,5 +74,25 @@ body {
 	<li><a href="t2020s.html">2020s</a></li>
 	</ul>
 	</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Satellite</h2>
+        <p>On October 4, 1957, the Soviet Union launched the earth’s first artificial satellite, Sputnik-1. The successful launch came as a shock to experts and citizens in the United States, who had hoped that the United States would accomplish this scientific advancement first.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Hovercraft</h2>
+        <p>In the 1950s Avro Canada developed the VZ-9AV Avrocar. It was an attempt to create a craft that could take off and land vertically. The project was eventually taken over by the US military.</p>
+    </div>
+    <div class="grid-item">
+        <h2>The transistor radio</h2>
+        <p>A transistor radio is a small portable radio receiver that uses transistor-based circuitry. Previous portable radios used vacuum tubes, which were bulky, fragile, had a limited lifetime, consumed excessive power and required large heavy batteries. These radios would go through several advancements to progress to what they are today.</p>
+    </div>
+</div>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
 </body>
 </html>
