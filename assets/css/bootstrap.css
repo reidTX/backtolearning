@@ -48,7 +48,87 @@ html, body {
     color: white;
 }
 
+        #quiz-container, #score {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
 
+        #question {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        #choices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+.quiz-wrapper {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for visibility */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#quiz-container, #score, #missed-questions, button {
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+        #choices button {
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #choices button:hover {
+            background-color: #777;
+        }
+
+        #start-button {
+            background-color: #008cba;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #start-button:hover {
+            background-color: #005f73;
+        }
+.container13 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+}
 /* Style for the custom cursor */
 .custom-cursor {
     position: fixed;

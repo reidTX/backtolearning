@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<title>Back to Learning!</title>
+<style>
+html { color-scheme: light dark; }
+body {
+    margin: 0;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    background-color: black;
+    background-image: url("/assets/photos/quizback.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+</head>
+	
+<body>
+	<div class="custom-cursor" id="customCursor"></div>
+<script src="/assets/js/wavy.js"></script>
+<script src="/assets/js/cursor.js"></script>
+<div class="container13">
+    <div id="quiz-container" style="display: none;">
+        <div id="question"></div>
+        <div id="choices">
+            <button onclick="checkAnswer(0)">Option 1</button>
+            <button onclick="checkAnswer(1)">Option 2</button>
+            <button onclick="checkAnswer(2)">Option 3</button>
+        </div>
+    </div>
+    <div id="score" style="display: none;"></div>
+	<p id="missed-questions" style="display: none;"></p>
+	<button id="start-button" onclick="startQuiz()">Start Quiz</button>
+	<button id="restart-button" onclick="startQuiz()" style="display: none;">Restart Quiz</button>
+	</div>
+	<script src="assets/js/quiz.js"></script>
+	<div class="corner-content">
+	 <a href="../index.html">
+    <img src="../assets/photos/pngegg (2).png" alt="Description" class="corner-image">
+	</a>
+    <p class="corner-text">Click here to go Home</p>
+</div>
+</body>
+</html>
